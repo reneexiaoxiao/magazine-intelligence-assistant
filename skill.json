@@ -1,0 +1,29 @@
+{
+  "name": "magazine-intelligence-assistant",
+  "description": "Transform magazine reading into strategic intelligence - auto-split PDFs, categorize articles, and extract insights",
+  "version": "1.0.0",
+  "author": "Rene Xiaoxiao",
+  "license": "MIT",
+  "capabilities": [
+    "PDF splitting with automatic page offset detection",
+    "Article categorization using personalized tags",
+    "Insight generation for content creation",
+    "JSON output for automation workflows"
+  ],
+  "requirements": {
+    "python": ">=3.8",
+    "packages": ["PyPDF2>=3.0.0"]
+  },
+  "configuration": {
+    "config_path": "~/Desktop/杂志精读/config.json",
+    "workspace": "~/Desktop/杂志精读/",
+    "output_format": "markdown + json"
+  },
+  "usage": {
+    "setup": "python tools/setup_wizard.py",
+    "basic": "Process magazine PDF and extract insights",
+    "advanced": "Customize tags, adjust page offsets, create custom workflows"
+  },
+  "github": "https://github.com/reneexiaoxiao/magazine-intelligence-assistant",
+  "documentation": "https://github.com/reneexiaoxiao/magazine-intelligence-assistant/blob/main/README.md"
+}
