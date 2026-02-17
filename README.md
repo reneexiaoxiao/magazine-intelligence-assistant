@@ -2,7 +2,9 @@
 
 > **Transform magazine reading from passive consumption into strategic intelligence gathering**
 
-A customizable AI assistant that helps you **curate, categorize, and extract insights** from magazine articles. Perfect for researchers, entrepreneurs, investors, and lifelong learners who want to turn their reading into actionable knowledge.
+A **standalone toolkit** that helps you **curate, categorize, and extract insights** from magazine articles. Works with **Claude, ChatGPT, or any AI platform**.
+
+**Not just a skill** — It's a complete package including Python tools + AI prompt templates + setup wizard.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
@@ -61,7 +63,63 @@ python tools/setup_wizard.py
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Structure & How It Works
+
+### Directory Structure
+```
+magazine-intelligence-assistant/
+├── README.md                          # This file
+├── LICENSE                            # MIT License
+├── config.example.json                # Example configuration
+├── config.json                        # Your personal config (created by wizard)
+│
+├── tools/                             # Python automation tools
+│   ├── setup_wizard.py                # Interactive setup wizard ⭐
+│   └── split_magazine.py              # PDF splitter (with offset +2)
+│
+├── template/                          # AI Prompts
+│   └── magazine_recommender_skill.md  # Universal skill for Claude/GPT ⭐
+│
+└── docs/                              # Documentation
+    ├── USER_GUIDE.md                  # Detailed user guide
+    ├── API_REFERENCE.md               # Configuration API
+    └── CONTRIBUTING.md                # Contribution guidelines
+```
+
+### How It Works
+
+```
+┌─────────────────────────────────────────┐
+│ 1. Configure Your Preferences          │
+│    python tools/setup_wizard.py        │
+│    ↓                                    │
+│  Creates config.json with:             │
+│  - Your topics                          │
+│  - Your custom tags                     │
+│  - Your learning style                  │
+└─────────────────────────────────────────┘
+            ↓
+┌─────────────────────────────────────────┐
+│ 2. Process Your Magazine                │
+│    python tools/split_magazine.py      │
+│    ↓                                    │
+│  Splits PDF → Individual article PDFs   │
+└─────────────────────────────────────────┘
+            ↓
+┌─────────────────────────────────────────┐
+│ 3. Get AI Recommendations                │
+│    Copy template/...skill.md           │
+│    ↓                                    │
+│  Paste into ANY AI platform:            │
+│  - Claude (web or Claude Code)          │
+│  - ChatGPT                              │
+│  - Other AI assistants                  │
+│    ↓                                    │
+│  Get categorized recommendations!        │
+└─────────────────────────────────────────┘
+```
+
+**Key Point**: This is a **standalone toolkit**, not tied to any specific AI platform!
 
 ```
 magazine-intelligence-assistant/
