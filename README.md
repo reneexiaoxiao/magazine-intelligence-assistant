@@ -1,6 +1,6 @@
-# 🤖 Magazine Intelligence Assistant
+# 🤖 Magazine Intelligence Assistant - Claude Code Skill
 
-> **A Claude Code Skill for intelligent magazine reading**
+> **Transform magazine reading into strategic intelligence with this Claude Code skill**
 
 Transform magazine reading from passive consumption into strategic intelligence gathering. This skill automatically splits magazine PDFs into articles, categorizes them based on your interests, and extracts actionable insights.
 
