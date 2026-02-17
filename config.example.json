@@ -1,0 +1,42 @@
+{
+  "user_name": "Your Name",
+  "role": "Your Role (e.g., Entrepreneur, Researcher, Investor)",
+  "primary_topics": [
+    "Topic 1",
+    "Topic 2",
+    "Topic 3"
+  ],
+  "secondary_topics": [
+    "Topic 4",
+    "Topic 5"
+  ],
+  "learning_style": "balanced",
+  "content_strategy": "public_sharing",
+  "relevance_threshold": "medium",
+  "tags": {
+    "🎯 Primary_Topic :: Analysis": {
+      "description": "Articles about your primary topic",
+      "action": "Create detailed analysis, extract key frameworks"
+    },
+    "💡 Innovation :: Signal": {
+      "description": "Innovation trends and emerging technologies",
+      "action": "Identify weak signals, create trend report"
+    },
+    "💼 Business :: Case_Study": {
+      "description": "Business cases, startup stories",
+      "action": "Analyze business model, extract lessons learned"
+    }
+  },
+  "action_templates": {
+    "research": "Create research brief with 3 key questions to investigate",
+    "business": "Analyze business model canvas and identify 3 opportunities",
+    "content": "Turn into tweet thread with 5 key points + 1 actionable insight",
+    "deep_dive": "Create comprehensive analysis with: Key Findings, Implications, Action Items"
+  },
+  "output_formats": {
+    "briefing": "markdown",
+    "json": true,
+    "include_cross_references": true,
+    "include_reading_time": true
+  }
+}
